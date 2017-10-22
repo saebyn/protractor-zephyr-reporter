@@ -31,6 +31,7 @@ const ZephyrService = (options) => {
                     name,
                     startDate: getDate(),
                     endDate: getDate(),
+                    environment: options.environment || '',
                     projectId: options.projectId,
                     versionId: response[1] || '-1',
                     sprintId: response[0] || '-1'
